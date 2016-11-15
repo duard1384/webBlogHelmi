@@ -1,0 +1,257 @@
+/*
+
+ -----tamaños de fuentes---
+titulos: h1|40px|3.5em
+subtitulo: h2|35px|2.8em
+texto-big: 30px| 2.0em
+texto-medio: 25px| 1.8em
+----typografia----
+font-family: 'Permanent Marker', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Gochi Hand', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Homemade+Apple|Permanent+Marker|Rock+Salt');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.headerBg {
+    background-image: url('../recursos/img10.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -260px;
+    width: 100%;
+    padding: 80px;
+}
+
+.headerBg .headerText {
+    font-family: 'Rock Salt', cursive;
+    width: 350px;
+    height: 150px;
+    color: #3439CD;
+    font-size: 5.2em;
+    margin-left: 100px;
+    text-shadow: 3px 4px 12px #7989CD;
+}
+
+.headerBg .headerText div {}
+
+
+/* nav-bar*/
+
+
+/*html,
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+
+
+/*}
+body {
+    padding-top: 100px;
+}
+footer {
+    padding: 30px 0;
+}*/
+
+.changePositionFixed {
+    position: fixed !important;
+}
+
+.changePositionRelative {
+    position: relative !important;
+}
+
+
+/*
+ * Custom styles
+ */
+
+.navbar-fixed-top {
+    position: relative;
+}
+
+.navbar-brand {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 3.5em;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #222;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 28px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container {
+    color: grey;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+ul li a {
+    color: grey;
+}
+
+footer {
+    padding: 20px;
+    color: grey;
+    background-color: #D4D0C9;
+    color: white !important;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.boxLogo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+      font-family: 'Rock Salt', cursive;
+    width: 100%;
+    height: 150px;
+    color: #3439CD;
+    font-size: 3.2em;
+    text-shadow: 3px 4px 12px #7989CD;
+}
+.copyRight{
+    text-align: center;
+    font-size: 1em;
+}
+.linkFooter {
+    padding-left: 100px;
+    margin-top: 40px;
+    font-size: 1.3em;
+}
+
+/*social*/
+
+.social {}
+
+.text-right li {
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 10px;
+    font-size: 1.4em;
+}
+
+.text-right li:hover {
+    color: #D4D0C9;
+}
+
+
+/*article*/
+
+article {}
+
+article.jumbotrom {
+    padding: 0px;
+}
+
+article.jumbotrom h1 {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 3.5em;
+    margin-bottom: -20px;
+}
+
+.textType1 {
+    color: #97A09A;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.8em;
+    padding: 20px;
+}
+
+.articleLeft {
+    margin: 0;
+    padding: 0;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 0, 0 0);
+}
+
+.articleRight {
+    margin: 0;
+    padding: 0;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 0, 0% 0%);
+}
+
+.articleTitleLeft h1 {
+    margin-left: 150px;
+    margin-top: 100px;
+    font-size: 8.0em;
+}
+
+.articleTitleRight h1 {
+    margin-left: 1300px;
+    margin-top: 100px;
+    font-size: 7.0em;
+}
+
+.articleTitleDiv {
+    font-family: 'Gochi Hand', cursive;
+    width: 200px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 5px 15px grey;
+}
+
+.articleTextDiv p {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2.9em;
+    margin-top: 120px;
+    width: 480px;
+    height: 150px;
+    margin-left: 100px;
+}
+
+.textDivLeft {
+    margin-left: -400px;
+}
+
+#textDivRight {}
+
+.imageArticle1 {
+    background-image: url('../recursos/img4.jpeg');
+}
+
+.imageArticle2 {
+    background-image: url('../recursos/img3.jpeg');
+}
+
+.imageArticle3 {
+    background-image: url('../recursos/img5.jpeg');
+}
+
+.imageArticle4 {
+    background-image: url('../recursos/img9.jpeg');
+}
+
+.articlePosImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -180px;
+    height: 400px;
+}
+
+.prueba {
+    background: repeating-linear-gradient(45deg, #005588 100%, #00aacc 90%, #eee 80%, #eee 60%);
+    /*background: -webkit-repeating-linear-gradient(45deg, #005588, #00aacc 30px, #eee 30px, #eee 71px);*/
+    background-size: 100% auto;
+}
