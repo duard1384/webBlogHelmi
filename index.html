@@ -19,8 +19,159 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/493ef35f7a.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/styleMain.css">
     <!--  <link href="<?php //bloginfo(stylesheet_directory) ?>/styleMain.css " rel="stylesheet" >-->
+    <style>
+    td {
+        width: 250px;
+    }
+    
+    .hidden {
+        height: 0;
+    }
+    
+    .hexagon-large {
+        background-size: cover;
+        width: 130px;
+        height: 115px;
+        -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    }
+    
+    @-moz-document url-prefix() {
+        .hexagon-large {
+            clip-path: url(#large-hex);
+        }
+    }
+    
+    .hexagon-medium {
+        background-size: cover;
+        width: 95px;
+        height: 90px;
+        -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    }
+    
+    @-moz-document url-prefix() {
+        .hexagon-medium {
+            clip-path: url(#medium-hex);
+        }
+    }
+    
+    .hexagon-small {
+        background-size: cover;
+        width: 45px;
+        height: 40px;
+        -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    }
+    
+    @-moz-document url-prefix() {
+        .hexagon-small {
+            clip-path: url(#small-hex);
+        }
+    }
+    
+    .hexagon-svg-large {
+        clip-path: url(#large-hex-ie);
+    }
+    
+    .hexagon-svg-medium {
+        clip-path: url(#medium-hex-ie);
+    }
+    
+    .hexagon-svg-small {
+        clip-path: url(#small-hex-ie);
+    }
+    
+    figure.hexagon {
+        position: relative;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        width: 55px;
+        height: 45px;
+        z-index: 2;
+        overflow: hidden;
+    }
+    
+    figure.hexagon:before {
+        left: -30px;
+        top: -21px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-left-color: #FFF;
+        border-width: 20px;
+        transform: rotate(206deg);
+        -webkit-transform: rotate(206deg);
+        -moz-transform: rotate(206deg);
+    }
+    
+    figure.hexagon:after {
+        right: -21px;
+        top: -21px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-left-color: #FFF;
+        border-width: 19px;
+        transform: rotate(334deg);
+        -webkit-transform: rotate(334deg);
+        -moz-transform: rotate(334deg);
+    }
+    
+    figure.hexagon img {
+        width: 48px;
+        height: 48px;
+    }
+    
+    figure.hexagon figcaption {
+        text-indent: -9999px;
+        width: 55px;
+        font-size: 0;
+        padding: 0;
+        line-height: 3rem;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    figure.hexagon figcaption:before {
+        left: -31px;
+        bottom: -19px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-left-color: #FFF;
+        border-width: 20px;
+        transform: rotate(152deg);
+        -webkit-transform: rotate(152deg);
+        -moz-transform: rotate(152deg);
+    }
+    
+    figure.hexagon figcaption:after {
+        right: -21px;
+        bottom: -21px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-left-color: #FFF;
+        border-width: 19px;
+        transform: rotate(27deg);
+        -webkit-transform: rotate(angle);
+        -moz-transform: rotate(angle);
+    }
+    </style>
 </head>
 
 <body>
@@ -81,25 +232,25 @@
         </div>
         <div class="row">
             <article>
-                <div class="col-lg-9 col-md-9 articleLeft">
-                    <div class="articlePosImage imageArticle1">
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <div class="articlePosImage imageArticle-left imageArticle1">
                         <div class="articleTitleDiv articleTitleLeft">
                             <h1>MODA</h1>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 articleTextDiv textDivLeft">
+                <div class="col-lg-3 col-md-3 col-sm-3 articleTextDiv textDivLeft">
                     <p>La moda dia a dia desde america hasta Europa</p>
                 </div>
             </article>
         </div>
         <div class="row">
             <article>
-                <div class="col-lg-3 col-md-3 articleTextDiv ">
+                <div class="col-lg-3 col-md-3 col-sm-3 articleTextDiv ">
                     <p>La actualidad de hoy, mañana y presente</p>
                 </div>
-                <div class="col-lg-9 col-md-9 articleRight">
-                    <div class="articlePosImage imageArticle2">
+                <div class="col-lg-9 col-md-9 col-sm-9 ">
+                    <div class="articlePosImage imageArticle-right imageArticle2">
                         <div class="articleTitleDiv articleTitleRight">
                             <h1>ACTUALIDAD</h1>
                         </div>
@@ -109,25 +260,25 @@
         </div>
         <div class="row">
             <article>
-                <div class="col-lg-9 col-md-9 articleLeft">
-                    <div class="articlePosImage imageArticle3">
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <div class="articlePosImage imageArticle-left imageArticle3">
                         <div class="articleTitleDiv articleTitleLeft">
                             <h1>TIPS</h1>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 articleTextDiv textDivLeft">
+                <div class="col-lg-3 col-md-3 col-sm-3 articleTextDiv textDivLeft">
                     <p>Trucos para el buen vestir y estar siempre Chick</p>
                 </div>
             </article>
         </div>
         <div class="row">
             <article>
-                <div class="col-lg-3 col-md-3 articleTextDiv">
+                <div class="col-lg-3 col-md-3 col-sm-3 articleTextDiv">
                     <p>No dudes en acompañarme en esta aventura</p>
                 </div>
-                <div class="col-lg-9 col-md-9 articleRight">
-                    <div class="articlePosImage imageArticle4">
+                <div class="col-lg-9 col-md-9 col-sm-9 ">
+                    <div class="articlePosImage  imageArticle-right imageArticle4">
                         <div class="articleTitleDiv articleTitleRight">
                             <h1>BLOG</h1>
                         </div>
