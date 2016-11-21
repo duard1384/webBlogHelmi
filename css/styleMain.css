@@ -262,7 +262,7 @@ article.jumbotrom h1 {
 }
 
 .articleTitleRight h1 {
-    margin-left: 1200px;
+    margin-left: 500px;
     margin-top: 70px;
     font-size: 7em;
 }
@@ -412,6 +412,14 @@ article.jumbotrom h1 {
         flex-direction: column-reverse;
         width: 100%;
     }
+    .headerBg{
+    background-position-y: 0;
+    }
+    .headerBg .headerText{
+        font-size: 3em;
+        width: 100%;
+        margin: auto;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
@@ -432,6 +440,12 @@ article.jumbotrom h1 {
         margin-left: 660px;
         margin-top: 58px;
         font-size: 5em;
+    }
+     .headerBg{
+    background-position-y: -180px;
+    }
+    .headerBg .headerText{
+        font-size: 4em;
     }
 }
 
