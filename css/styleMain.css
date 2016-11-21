@@ -34,7 +34,7 @@ font-family: 'Gochi Hand', cursive;
     color: #3439CD;
     font-size: 5.2em;
     margin-left: 100px;
-    text-shadow: 3px 4px 12px #7989CD;
+    text-shadow: 3px 4px 5px #7989CD;
 }
 
 .headerBg .headerText div {}
@@ -407,8 +407,10 @@ article.jumbotrom h1 {
         text-align: center;
         font-size: 2.3em;
     }
-    .left {
-        float: right !important;
+    .order {
+        display: inline-flex;
+        flex-direction: column-reverse;
+        width: 100%;
     }
 }
 
