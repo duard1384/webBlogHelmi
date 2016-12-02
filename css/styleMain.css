@@ -285,16 +285,20 @@ article.jumbotrom h1 {
     font-family: 'Gochi Hand', cursive;
     font-size: 2.9em;
     margin-top: 120px;
-    width: 480px;
-    height: 150px;
-    margin-left: 190px;
+    width: 420px;
+    /* height: auto; */;
+    margin-left: 140px;
+}
+
+.icon-bar {
+    color: grey !important;
 }
 
 
 /*--------------------------*/
 
 .textDivLeft {
-    margin-left: -400px;
+    margin-left: -298px;
 }
 
 .imageArticle-left {
@@ -353,8 +357,19 @@ article.jumbotrom h1 {
 .articlePosImage {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -180px;
+    background-position-y: -145px;
     height: 400px;
+}
+
+.modal {
+    background-image: url(../recursos/imgModa.jpg);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 85px;
+    z-index: -100;
+    /* justify-content: center; */
+    /* align-content: center; */
+    ;
 }
 
 
@@ -364,21 +379,22 @@ article.jumbotrom h1 {
     .imageArticle-left::before {
         transform: rotate(425deg);
         top: -150px;
+        border: none;
     }
     .imageArticle-right::before {
         transform: rotate(475deg);
         left: -1080px;
+        border: none;
     }
     .articleTitleLeft h1 {
         margin-left: 0px;
-        margin-top: 30px;
-        font-size: 4em;
+        margin-top: 60px;
+        font-size: 7em;
     }
     .articleTitleRight h1 {
         margin-left: 0;
-        ;
-        margin-top: 30px;
-        font-size: 4em;
+        margin-top: 80px;
+        font-size: 6em;
     }
     .headerText {
         margin: 0 !important;
@@ -392,6 +408,7 @@ article.jumbotrom h1 {
     }
     .textDivLeft {
         margin-left: 0;
+        margin: auto;
     }
     .textDivLeft p {
         margin-left: 0;
@@ -401,21 +418,23 @@ article.jumbotrom h1 {
         font-size: 2.3em;
     }
     .articleTextDiv p {
-        margin-left: 0;
         width: 100%;
         margin: auto;
-        text-align: center;
         font-size: 2.3em;
+        text-align: center;
+        margin-left: 100px;
+        height: auto;
+        padding: 20px;
     }
     .order {
         display: inline-flex;
         flex-direction: column-reverse;
         width: 100%;
     }
-    .headerBg{
-    background-position-y: 0;
+    .headerBg {
+        background-position-y: 0;
     }
-    .headerBg .headerText{
+    .headerBg .headerText {
         font-size: 3em;
         width: 100%;
         margin: auto;
@@ -424,27 +443,39 @@ article.jumbotrom h1 {
 
 @media (min-width: 769px) and (max-width: 991px) {
     .imageArticle-left::before {
-        transform: rotate(424deg);
-        top: -142px;
+        transform: rotate(422deg);
+        top: -90px;
     }
     .imageArticle-right::before {
-        transform: rotate(472deg);
-        left: -914px;
+        transform: rotate(477deg);
+        left: -1000px;
+    }
+    .textDivLeft {
+        box-sizing: border-box !important;
+    }
+    .textDivLeft p {
+        margin-left: 0px;
     }
     .articleTitleLeft h1 {
-        margin-left: 100px;
+        margin-left: -100px;
         margin-top: 50px;
         font-size: 5em;
     }
     .articleTitleRight h1 {
-        margin-left: 660px;
+        margin-left: 260px;
         margin-top: 58px;
         font-size: 5em;
     }
-     .headerBg{
-    background-position-y: -180px;
+    .articleTextDiv p {
+        font-size: 2.4em;
+        padding: 15px;
+        text-align: center;
+        margin-left: 70px;
     }
-    .headerBg .headerText{
+    .headerBg {
+        background-position-y: -180px;
+    }
+    .headerBg .headerText {
         font-size: 4em;
     }
 }
@@ -453,21 +484,24 @@ article.jumbotrom h1 {
     .imageArticle-left::before {
         border-width: 1018px !important;
         left: -200px !important;
-        transform: rotate(425deg);
+        transform: rotate(426deg);
     }
     .imageArticle-right::before {
         left: -933px;
         transform: rotate(473deg);
     }
     .articleTitleLeft h1 {
-        margin-left: 150px;
+        margin-left: -250px;
         margin-top: 80px;
         font-size: 6em;
     }
     .articleTitleRight h1 {
-        margin-left: 925px;
+        margin-left: 380px;
         margin-top: 80px;
         font-size: 6em;
+    }
+    .articleTextDiv{
+
     }
 }
 
