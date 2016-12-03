@@ -105,7 +105,9 @@ footer {
     transition: 0.8s;
     -webkit-transition: 0.8s;
 }
-
+span.icon-bar{
+    border:2px solid grey;
+}
 ul li a {
     color: grey;
 }
@@ -369,13 +371,24 @@ article.jumbotrom h1 {
     z-index: -100;
     /* justify-content: center; */
     /* align-content: center; */
-    ;
+    
 }
-
+ .social-footer{
+        visibility: hidden;
+    }
 
 /* -------- Media Querys ----------*/
 
 @media (max-width: 768px) {
+    .social{
+        visibility: hidden;
+    }
+    .social-footer{
+        visibility: visible;
+    }
+    .text-right{
+        text-align: center !important;
+    }
     .imageArticle-left::before {
         transform: rotate(425deg);
         top: -150px;
@@ -422,7 +435,7 @@ article.jumbotrom h1 {
         margin: auto;
         font-size: 2.3em;
         text-align: center;
-        margin-left: 100px;
+        
         height: auto;
         padding: 20px;
     }
@@ -442,6 +455,9 @@ article.jumbotrom h1 {
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
+     .social-footer{
+        visibility: hidden;
+    }
     .imageArticle-left::before {
         transform: rotate(422deg);
         top: -90px;
@@ -481,6 +497,9 @@ article.jumbotrom h1 {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+     .social-footer{
+        visibility: hidden;
+    }
     .imageArticle-left::before {
         border-width: 1018px !important;
         left: -200px !important;
@@ -506,6 +525,9 @@ article.jumbotrom h1 {
 }
 
 @media (min-width: 1200px) {
+     .social-footer{
+        visibility: hidden;
+    }
     .imageArticle-left::before {
         transform: rotate(427deg) !important;
         top: 60px!important;
