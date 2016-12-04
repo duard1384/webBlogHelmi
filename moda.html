@@ -10,7 +10,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
     <!-- Latest compiled and minified JavaScript -->
-     <!--<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
+    <!--<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>-->
     <script async="" type="text/javascript" src="https://use.fontawesome.com/493ef35f7a.js"></script>
     <!-- js own-->
     <script src="js/javascript.js"></script>
@@ -27,13 +27,13 @@
 <body>
     <div class="container-fluid">
         <header class="row">
-            <div class="headerBg">
+            <div class="headerBgModa">
                 <div class="headerText">
-                    <div>Hoy</div>
-                    <div>Ellas</div>
+                    <div>Moda</div>
                 </div>
             </div>
         </header>
+        <!-- navbar -->
         <nav id="header" class="navbar navbar-fixed-top">
             <div id="header-container" class="container navbar-container">
                 <div class="navbar-header">
@@ -43,14 +43,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a id="brand" class="navbar-brand" href="#">Hoy-Ellas</a>
+                    <a id="brand" class="navbar-brand" href="index.html">Hoy-Ellas</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="moda.html">Moda</a></li>
                         <li><a href="actuales.html">Actualidad</a></li>
-                        <li><a href="#tips.html">Tips</a></li>
-                        <li><a href="#blog.html">Blog</a></li>
+                        <li><a href="tips.html">Tips</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                     </ul>
                     <ul class="social text-right">
                         <li>
@@ -67,85 +67,76 @@
             </div>
             <!-- /.container -->
         </nav>
-        <!-- /.navbar -->
-        <div class="row">
-            <article class="text-center jumbotrom">
-                <div class="container">
-                    <h1>Hoy-Ellas</h1>
-                    <br>
-                    <!-- <?php 
-                    //bloginfo('name');
-                     ?>-->
-                    <p class="textType1">lorem20Lorem ipsum dolor sit amet, consectetur adipisicing elit. CoRnsectetur velit, illum molestias Robcaecati magni, debitis enim tempora assumenda odio nostrum, hic repellendus, reprehenderit ex. Enim earum dolorum, deleniti, provident minima qui quasi</p>
-                </div>
-            </article>
-        </div>
-        <div class="row">
-            <article>
-                <div class="col-lg-9 col-md-9 col-sm-9 ">
-                    <div class="articlePosImage imageArticle-left imageArticle1">
-                        <div class="articleTitleDiv articleTitleLeft">
-                            <h1>MODA</h1>
+        <!-- section -->
+        <section class="row">
+            <div class="font-text title-container">
+                <h1>MODA</h1><h2>-  hoy Ellas</h2>
+            </div>
+        </section>
+        <section class="row page-container">
+            <div class="col-md-8 col-xs-12 col-lg-8">
+                <div class="article-container">
+                    <div class="article-title font-text">
+                        <h1>Primer titulo articulo</h1>
+                    </div>
+                    <img src="recursos/img3.jpeg" alt="">
+                    <div class="article-block">
+                        <div class="article-detail">
+                        </div>
+                        <div class="article-text">
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iusto aliquam voluptas saepe at sint illo, aperiam dicta, perferendis nemo aspernatur error laudantium, voluptate aliquid nostrum quas voluptatem, nihil. Eos.</p>
+                                <cite>
+                                    <kbd>autor : helmi</kbd>
+                                </cite>
+                                <cite class="article-text-fecha"><em>fecha publicacion 25/10/2016</em></cite>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3  articleTextDiv textDivLeft">
-                    <p class="moda">La moda dia a dia desde america hasta Europa</p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="font-text">
+                    <h3>Ultimas publicaciones</h3>
                 </div>
-            </article>
-        </div>
-        <div class="row">
-            <article class="order">
-                <div class="col-lg-3 col-md-3 col-sm-3 articleTextDiv left">
-                    <p>La actualidad de hoy, mañana y presente</p>
-                </div>
-                <div class="col-lg-9 col-md-9 col-sm-9 ">
-                    <div class="articlePosImage imageArticle-right imageArticle2">
-                        <div class="articleTitleDiv articleTitleRight">
-                            <h1>ACTUALES</h1>
-                        </div>
+                <div>
+                    <img src="recursos/img1.jpeg" alt="">
+                    <div>
+                        <h4><a href="actuales.html">ACTUALES</a> - <a href="actuales.html"><small><em>Primera tentencia</em></small></a></h4>
+                        <p class=" font-text text-center"> Lorem ipsum dolor sit amet. ipsum dolor sit amet. Veniam, libero?</p>
+                        <div class="text-right">autor : <em>BOGUE</em></div>
                     </div>
                 </div>
-            </article>
-        </div>
-        <div class="row">
-            <article>
-                <div class="col-lg-9 col-md-9 col-sm-9 ">
-                    <div class="articlePosImage imageArticle-left imageArticle3">
-                        <div class="articleTitleDiv articleTitleLeft">
-                            <h1>TIPS</h1>
-                        </div>
+                <div>
+                    <img src="recursos/img2.jpeg" alt="">
+                    <div>
+                        <h4><a href="tips.html">TIPS</a> - <a href="tips.html"><small>Mas trucos...</small></a></h4>
+                        <p class=" font-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, beatae.</p>
+                        <div class="text-right">autor : <em>GUCHY</em></div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 articleTextDiv textDivLeft">
-                    <p>Trucos para el buen vestir y estar siempre Chick</p>
-                </div>
-            </article>
-        </div>
-        <div class="row">
-            <article class="order">
-                <div class="col-lg-3 col-md-3 col-sm-3 articleTextDiv">
-                    <p>No dudes en acompañarme en esta aventura</p>
-                </div>
-                <div class="col-lg-9 col-md-9 col-sm-9 ">
-                    <div class="articlePosImage  imageArticle-right imageArticle4">
-                        <div class="articleTitleDiv articleTitleRight">
-                            <h1>BLOG</h1>
-                        </div>
+                <div>
+                    <img src="recursos/img3.jpeg" alt="">
+                    <div>
+                        <h4><a href="blog.html">BLOG</a> - <a href="blog.html"><small>Hoy tentencia</small></a></h4>
+                        <p class=" font-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, officia.</p>
+                        <div class="text-right">autor : <em>SARA</em></div>
                     </div>
                 </div>
-            </article>
-        </div>
-          <ul class="social-footer text-right">
-                        <li>
-                            <a href="#about"></a><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
-                        <li>
-                            <a href="#contact"></a><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
-                        <li>
-                            <a href="#contact"></a><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></li>
-                        <li>
-                            <a href="#contact"></a><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
-                    </ul>
+            </div>
+        </section>
+        <!-- social -->
+        <ul class="social-footer text-right">
+            <li>
+                <a href="#about"></a><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
+            <li>
+                <a href="#contact"></a><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+            <li>
+                <a href="#contact"></a><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></li>
+            <li>
+                <a href="#contact"></a><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+        </ul>
+        <!-- footer -->
         <footer class="row">
             <div class="col-md-4">
                 <div class="box">

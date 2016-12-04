@@ -27,7 +27,51 @@ font-family: 'Gochi Hand', cursive;
     padding: 80px;
 }
 
-.headerBg .headerText {
+.headerBgModa {
+    background-image: url('../recursos/img1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -260px;
+    width: 100%;
+    padding: 80px;
+}
+
+.headerBgActuales {
+    background-image: url('../recursos/img2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -260px;
+    width: 100%;
+    padding: 80px;
+}
+
+.headerBgTips {
+    background-image: url('../recursos/img3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -260px;
+    width: 100%;
+    padding: 80px;
+}
+
+.headerBgBlog {
+    background-image: url('../recursos/img4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -260px;
+    width: 100%;
+    padding: 80px;
+}
+.headerBgLayout{
+    background-image: url('../recursos/img5.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -260px;
+    width: 100%;
+    padding: 80px; 
+}
+
+.headerText {
     font-family: 'Rock Salt', cursive;
     width: 350px;
     height: 150px;
@@ -35,6 +79,11 @@ font-family: 'Gochi Hand', cursive;
     font-size: 5.2em;
     margin-left: 100px;
     text-shadow: 3px 4px 5px #7989CD;
+}
+
+.font-text {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.4em;
 }
 
 .headerBg .headerText div {}
@@ -105,9 +154,11 @@ footer {
     transition: 0.8s;
     -webkit-transition: 0.8s;
 }
-span.icon-bar{
-    border:2px solid grey;
+
+span.icon-bar {
+    border: 2px solid grey;
 }
+
 ul li a {
     color: grey;
 }
@@ -288,7 +339,8 @@ article.jumbotrom h1 {
     font-size: 2.9em;
     margin-top: 120px;
     width: 420px;
-    /* height: auto; */;
+    /* height: auto; */
+    ;
     margin-left: 140px;
 }
 
@@ -296,8 +348,46 @@ article.jumbotrom h1 {
     color: grey !important;
 }
 
+.page-container img {
+    height: 250px;
+    width: 100%
+}
 
-/*--------------------------*/
+.page-container div {
+    padding: 10px;
+}
+
+.article-container img {
+    height: 350px;
+    width: 100%
+}
+
+.article-text-fecha {
+    float: right !important;
+}
+
+.article-title h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.title-container{
+    background-color: #3439CD;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.title-container h1  {
+    margin: 20px 30px;
+    font-size: 2.5em;
+  //*  text-shadow: 3px 4px 5px #7989CD;*/
+    
+}
+.title-container h2{
+    line-height: 0.8;
+}
+
+
+/*------------------*/
 
 .textDivLeft {
     margin-left: -298px;
@@ -371,22 +461,23 @@ article.jumbotrom h1 {
     z-index: -100;
     /* justify-content: center; */
     /* align-content: center; */
-    
 }
- .social-footer{
-        visibility: hidden;
-    }
+
+.social-footer {
+    visibility: hidden;
+}
+
 
 /* -------- Media Querys ----------*/
 
 @media (max-width: 768px) {
-    .social{
+    .social {
         visibility: hidden;
     }
-    .social-footer{
+    .social-footer {
         visibility: visible;
     }
-    .text-right{
+    .text-right {
         text-align: center !important;
     }
     .imageArticle-left::before {
@@ -435,7 +526,6 @@ article.jumbotrom h1 {
         margin: auto;
         font-size: 2.3em;
         text-align: center;
-        
         height: auto;
         padding: 20px;
     }
@@ -444,7 +534,7 @@ article.jumbotrom h1 {
         flex-direction: column-reverse;
         width: 100%;
     }
-    .headerBg {
+    .headerBg, .headerBgLayout, .headerBgModa, .headerBgTips, .headerBgBlog,.headerBgActuales {
         background-position-y: 0;
     }
     .headerBg .headerText {
@@ -455,7 +545,7 @@ article.jumbotrom h1 {
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-     .social-footer{
+    .social-footer {
         visibility: hidden;
     }
     .imageArticle-left::before {
@@ -497,7 +587,7 @@ article.jumbotrom h1 {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-     .social-footer{
+    .social-footer {
         visibility: hidden;
     }
     .imageArticle-left::before {
@@ -519,13 +609,11 @@ article.jumbotrom h1 {
         margin-top: 80px;
         font-size: 6em;
     }
-    .articleTextDiv{
-
-    }
+    .articleTextDiv {}
 }
 
 @media (min-width: 1200px) {
-     .social-footer{
+    .social-footer {
         visibility: hidden;
     }
     .imageArticle-left::before {

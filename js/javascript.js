@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
     /**
@@ -55,15 +54,20 @@ $(document).ready(function() {
      */
     function offSetManager() {
 
-        var yOffset = 0;
-        var currYOffSet = window.pageYOffset;
+/*codigo original delete IF and ELSE*/
 
-        if (yOffset < currYOffSet) {
+        if (location.pathname.substring((location.pathname.lastIndexOf("/") + 1), (location.pathname.length - 5)) == "index") {
+            var yOffset = 0;
+            var currYOffSet = window.pageYOffset;
+
+            if (yOffset < currYOffSet) {
+                myNavBar.add();
+            } else if (currYOffSet == yOffset) {
+                myNavBar.remove();
+            }
+        } else {
             myNavBar.add();
-        } else if (currYOffSet == yOffset) {
-            myNavBar.remove();
         }
-
     }
 
     /**
