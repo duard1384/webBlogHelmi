@@ -62,13 +62,14 @@ font-family: 'Gochi Hand', cursive;
     width: 100%;
     padding: 80px;
 }
-.headerBgLayout{
+
+.headerBgLayout {
     background-image: url('../recursos/img5.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -260px;
     width: 100%;
-    padding: 80px; 
+    padding: 80px;
 }
 
 .headerText {
@@ -353,8 +354,10 @@ article.jumbotrom h1 {
     width: 100%
 }
 
-.page-container div {
-    padding: 10px;
+.page-container div {}
+
+.article-container {
+    padding: 30px;
 }
 
 .article-container img {
@@ -370,22 +373,58 @@ article.jumbotrom h1 {
     margin: 0;
     margin-bottom: 10px;
 }
-.title-container{
-    background-color: #3439CD;
+
+.title-container {
+    background-color: grey;
     color: white;
     display: flex;
     align-items: center;
 }
-.title-container h1  {
+
+.title-container h1 {
     margin: 20px 30px;
     font-size: 2.5em;
-  //*  text-shadow: 3px 4px 5px #7989CD;*/
-    
+    //*  text-shadow: 3px 4px 5px #7989CD;*/
 }
-.title-container h2{
+
+.title-container h2 {
     line-height: 0.8;
 }
 
+.layout-img img{
+    padding: 0 0px;
+    height: 300px;
+    width: 100%;
+}
+.layout-detail {
+    padding: 10px 0px;
+}
+.layout-container {
+    padding: 0 150px;
+}
+
+.layout-title {
+    text-align: center;
+    font-size: 4em;
+}
+
+.blog-default-img img {
+    width: 100%;
+    height: 400px;
+}
+
+.blog-detail {
+    padding: 0 0;
+}
+
+.blog-block {
+    padding: 5px 20px;
+}
+
+.blog-article-img img {
+    width: 100%;
+    height: 300px;
+}
 
 /*------------------*/
 
@@ -534,7 +573,12 @@ article.jumbotrom h1 {
         flex-direction: column-reverse;
         width: 100%;
     }
-    .headerBg, .headerBgLayout, .headerBgModa, .headerBgTips, .headerBgBlog,.headerBgActuales {
+    .headerBg,
+    .headerBgLayout,
+    .headerBgModa,
+    .headerBgTips,
+    .headerBgBlog,
+    .headerBgActuales {
         background-position-y: 0;
     }
     .headerBg .headerText {
