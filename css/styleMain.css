@@ -1,4 +1,14 @@
 /*
+Theme Name: webBlogHelmi
+Theme URI: .hoyellas.com
+Description: tema sobrio y adaptable
+Version: 1
+Author: Eduardo Ulunque
+Author URL: duard.bol@gmail.com
+ */
+
+
+/*
 
  -----tamaños de fuentes---
 titulos: h1|40px|3.5em
@@ -200,6 +210,138 @@ footer {
 }
 
 
+/*
+*social author
+*/
+
+.icon {
+    display: flex;
+    margin-left: -5px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.icon-circle .fa {
+    font-size: 22px;
+    color: #e84700;
+    margin: 0 auto;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #e84700;
+    line-height: 40px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.35s;
+    -moz-transition: all ease-in-out 0.35s;
+    -o-transition: all ease-in-out 0.35s;
+    -ms-transition: all ease-in-out 0.35s;
+    transition: all ease-in-out 0.20s, background-color ease-in-out 0.05s;
+}
+
+.icon-circle .fa:hover {
+    background-color: #e84700;
+    color: #fff;
+    border: 1px solid #e84711;
+    -moz-box-shadow: inset 0px 0px 0px 5px #ffffff;
+    -o-box-shadow: inset 0px 0px 0px 5px #ffffff;
+    -ms-box-shadow: inset 0px 0px 0px 5px #ffffff;
+    -webkit-box-shadow: inset 0px 0px 0px 5px #ffffff;
+    box-shadow: inset 0px 0px 0px 5px #ffffff;
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+.icon-circle i:before {
+    margin-left: 0px;
+    font-size: 25px;
+}
+
+@media (min-width:320px) and (max-width:768px) {
+    .icon-circle .fa {
+        font-size: 15px;
+        color: #e84700;
+        margin: 0 auto;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 2px solid #e84700;
+        line-height: 40px;
+        cursor: pointer;
+        -webkit-transition: all ease-in-out 0.35s;
+        -moz-transition: all ease-in-out 0.35s;
+        -o-transition: all ease-in-out 0.35s;
+        -ms-transition: all ease-in-out 0.35s;
+        transition: all ease-in-out 0.20s, background-color ease-in-out 0.05s;
+    }
+    .icon-circle .fa:hover {
+        background-color: #e84700;
+        color: #fff;
+        border: 1px solid #e84711;
+        -moz-box-shadow: inset 0px 0px 0px 5px #ffffff;
+        -o-box-shadow: inset 0px 0px 0px 5px #ffffff;
+        -ms-box-shadow: inset 0px 0px 0px 5px #ffffff;
+        -webkit-box-shadow: inset 0px 0px 0px 5px #ffffff;
+        box-shadow: inset 0px 0px 0px 5px #ffffff;
+        -ms-transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+    }
+    .icon-circle i:before {
+        margin-left: 0px;
+        font-size: 20px;
+    }
+}
+
+.ifacebook .fa {
+    color: #3B5998;
+    border: 2px solid #3B5998;
+}
+
+.ifacebook .fa:hover {
+    background-color: #3B5998;
+    color: #fff;
+    border: 1px solid #3B5998;
+}
+
+.itwittter .fa {
+    color: #33ccff;
+    border: 2px solid #33ccff;
+}
+
+.itwittter .fa:hover {
+    background-color: #33ccff;
+    color: #fff;
+    border: 1px solid #33ccff;
+}
+
+.igoogle .fa {
+    color: #BD3518;
+    border: 2px solid #BD3518;
+}
+
+.igoogle .fa:hover {
+    background-color: #BD3518;
+    color: #fff;
+    border: 1px solid #BD3518;
+}
+
+.iLinkedin .fa {
+    color: #007bb7;
+    border: 2px solid #007bb7;
+}
+
+.iLinkedin .fa:hover {
+    background-color: #007bb7;
+    color: #fff;
+    border: 1px solid #007bb7;
+}
+
+
 /*social*/
 
 .social {}
@@ -290,6 +432,286 @@ article.jumbotrom h1 {
 }
 
 
+/*
+*article of data authors
+*/
+
+.imageAuthor {
+    padding: 0 0 0 20px;
+}
+
+.dataAuthor .media-heading {
+    font-size: 1.8em;
+    margin-left: 20px;
+}
+
+.dataAuthor p {
+    font-size: 1.5em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.dataAuthor p a {
+    font-family: 'Gochi Hand', cursive;
+}
+
+
+/*
+*article of data ONE authors
+*/
+
+.card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.card .card-heading {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.card .card-heading.simple {
+    font-size: 20px;
+    font-weight: 300;
+    color: #777;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card .card-heading.image img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    vertical-align: top;
+    border: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.card .card-heading.image .card-heading-header {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card .card-heading.image .card-heading-header h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.card .card-heading.image .card-heading-header span {
+    font-size: 12px;
+    color: #999999;
+}
+
+.card .card-body {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.card .card-media {
+    padding: 0 20px;
+    margin: 0 -14px;
+}
+
+.card .card-media img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card .card-actions {
+    min-height: 30px;
+    padding: 0 20px 20px 20px;
+    margin: 20px 0 0 0;
+}
+
+.card .card-comments {
+    padding: 20px;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.card .card-comments .comments-collapse-toggle {
+    padding: 0;
+    margin: 0 20px 12px 20px;
+}
+
+.card .card-comments .comments-collapse-toggle a,
+.card .card-comments .comments-collapse-toggle span {
+    padding-right: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-comments .media-heading {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card.people {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 300px;
+    padding-top: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.card.people:first-child {
+    margin-left: 0;
+}
+
+.card.people .card-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 170px;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.card.people .card-top.green {
+    background-color: #53a93f;
+}
+
+.card.people .card-top.blue {
+    background-color: #427fed;
+}
+
+.card.people .card-info {
+    position: absolute;
+    top: 150px;
+    display: inline-block;
+    width: 100%;
+    height: 101px;
+    overflow: hidden;
+    background: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.people .card-info .title {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #404040;
+}
+
+.card.people .card-info .desc {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.textAuthor {
+    width: 90%;
+    font-size: 1.4em;
+    margin: 0 auto;
+}
+
+.card.people .card-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card.hovercard .cardheader {
+    background: url("http://lorempixel.com/850/280/nature/4/");
+    background-size: cover;
+    height: 250px;
+}
+
+.card.hovercard .avatar {
+    position: relative;
+    top: -150px;
+    margin-bottom: -150px;
+}
+
+.card.hovercard .avatar img {
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.card.hovercard .info {
+    margin-top: -130px;
+    padding: 4px 8px 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.card.hovercard .info .title {
+    margin-bottom: 4px;
+    font-size: 44px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.hovercard .info .desc:nth-child(4) {
+    padding: 10px;
+}
+
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+
+.btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 18px;
+}
+
+
 /*.articleLeft {
     margin: 0;
     padding: 0;
@@ -375,8 +797,8 @@ article.jumbotrom h1 {
 }
 
 .title-container {
-    background-color: grey;
-    color: white;
+    background-color: #F2F2F2;
+    color: grey;
     display: flex;
     align-items: center;
 }
@@ -384,21 +806,23 @@ article.jumbotrom h1 {
 .title-container h1 {
     margin: 20px 30px;
     font-size: 2.5em;
-    //*  text-shadow: 3px 4px 5px #7989CD;*/
+    /*  text-shadow: 3px 4px 5px #7989CD;*/
 }
 
 .title-container h2 {
     line-height: 0.8;
 }
 
-.layout-img img{
+.layout-img img {
     padding: 0 0px;
     height: 300px;
     width: 100%;
 }
+
 .layout-detail {
     padding: 10px 0px;
 }
+
 .layout-container {
     padding: 0 150px;
 }
@@ -425,6 +849,7 @@ article.jumbotrom h1 {
     width: 100%;
     height: 300px;
 }
+
 
 /*------------------*/
 
@@ -586,6 +1011,30 @@ article.jumbotrom h1 {
         width: 100%;
         margin: auto;
     }
+    /*
+*article of data authors
+*/
+    .imageAuthor {
+        padding: 0 0 0 10px;
+    }
+    .imageAuthor img {
+        width: 100px;
+        height: 100px;
+    }
+    .dataAuthor .media-heading {
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
+    .dataAuthor p {
+        padding-top: 5px;
+        font-size: 1.2em;
+    }
+    .card.hovercard .info .title h2{
+        font-size: 0.5em;
+    }
+    /*
+    *
+    */
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
